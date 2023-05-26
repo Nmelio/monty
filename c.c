@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * f_swap - adds the top two elements of the stack.
+ * f_swap - swaps the top two elements of the stack.
  * @head: stack head
  * @counter: line_number
  * Return: no return
@@ -29,9 +29,11 @@ void f_swap(stack_t **head, unsigned int counter)
 	h->n = h->next->n;
 	h->next->n = aux;
 }
-#include "monty.h"
+
+
+
 /**
-  *f_sub- sustration
+  *f_sub - subtration of n2 from n1
   *@head: stack head
   *@counter: line_number
   *Return: no return
@@ -39,7 +41,7 @@ void f_swap(stack_t **head, unsigned int counter)
 void f_sub(stack_t **head, unsigned int counter)
 {
 	stack_t *aux;
-	int sus, nodes;
+	int sub, nodes;
 
 	aux = *head;
 	for (nodes = 0; aux != NULL; nodes++)
@@ -53,12 +55,14 @@ void f_sub(stack_t **head, unsigned int counter)
 		exit(EXIT_FAILURE);
 	}
 	aux = *head;
-	sus = aux->next->n - aux->n;
-	aux->next->n = sus;
+	sub = aux->next->n - aux->n;
+	aux->next->n = sub;
 	*head = aux->next;
 	free(aux);
 }
-#include "monty.h"
+
+
+
 /**
  * f_stack - prints the top
  * @head: stack head
@@ -71,7 +75,9 @@ void f_stack(stack_t **head, unsigned int counter)
 	(void)counter;
 	bus.lifi = 0;
 }
-#include "monty.h"
+
+
+
 /**
   *f_rotr- rotates the stack to the bottom
   *@head: stack head
@@ -97,7 +103,9 @@ void f_rotr(stack_t **head, __attribute__((unused)) unsigned int counter)
 	(*head)->prev = copy;
 	(*head) = copy;
 }
-#include "monty.h"
+
+
+
 /**
  * f_push - add node to the stack
  * @head: stack head

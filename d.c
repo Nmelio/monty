@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * f_pop - prints the top
+ * f_pop - removes top element
  * @head: stack head
  * @counter: line_number
  * Return: no return
@@ -21,7 +21,9 @@ void f_pop(stack_t **head, unsigned int counter)
 	*head = h->next;
 	free(h);
 }
-#include "monty.h"
+
+
+
 /**
  * f_pstr - prints the string starting at the top of the stack,
  * followed by a new
@@ -46,7 +48,9 @@ void f_pstr(stack_t **head, unsigned int counter)
 	}
 	printf("\n");
 }
-#include "monty.h"
+
+
+
 /**
  * f_mod - computes the rest of the division of the second
  * top element of the stack by the top element of the stack

@@ -46,7 +46,9 @@ void addqueue(stack_t **head, int n)
 		new_node->prev = aux;
 	}
 }
-#include "monty.h"
+
+
+
 /**
   *f_rotl- rotates the stack to the top
   *@head: stack head
