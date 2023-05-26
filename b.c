@@ -30,19 +30,9 @@ void f_mul(stack_t **head, unsigned int counter)
 	*head = h->next;
 	free(h);
 }
-#include "monty.h"
-/**
-  *f_nop- nothing
-  *@head: stack head
-  *@counter: line_number
-  *Return: no return
- */
-void f_nop(stack_t **head, unsigned int counter)
-{
-	(void) counter;
-	(void) head;
-}
-#include "monty.h"
+
+
+
 /**
  * f_pall - prints the stack
  * @head: stack head
@@ -63,7 +53,9 @@ void f_pall(stack_t **head, unsigned int counter)
 		h = h->next;
 	}
 }
-#include "monty.h"
+
+
+
 /**
  * f_pchar - prints the char at the top of the stack,
  * followed by a new line
@@ -94,7 +86,9 @@ void f_pchar(stack_t **head, unsigned int counter)
 	}
 	printf("%c\n", h->n);
 }
-#include "monty.h"
+
+
+
 /**
  * f_pint - prints the top
  * @head: stack head
