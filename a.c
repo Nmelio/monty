@@ -30,7 +30,9 @@ void f_add(stack_t **head, unsigned int counter)
 	*head = h->next;
 	free(h);
 }
-#include "monty.h"
+
+
+
 /**
  * addnode - add node to the head stack
  * @head: head of the stack
@@ -54,7 +56,9 @@ void addnode(stack_t **head, int n)
 	new_node->prev = NULL;
 	*head = new_node;
 }
-#include "monty.h"
+
+
+
 /**
  * f_div - divides the top two elements of the stack.
  * @head: stack head
@@ -94,7 +98,9 @@ void f_div(stack_t **head, unsigned int counter)
 	*head = h->next;
 	free(h);
 }
-#include "monty.h"
+
+
+
 /**
 * execute - executes the opcode
 * @stack: head linked list - stack
@@ -146,7 +152,9 @@ int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
 		exit(EXIT_FAILURE); }
 	return (1);
 }
-#include "monty.h"
+
+
+
 /**
 * free_stack - frees a doubly linked list
 * @head: head of the stack
